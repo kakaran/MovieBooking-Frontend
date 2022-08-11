@@ -1,0 +1,48 @@
+.trailerHeading
+{
+    text-align: center;
+    padding: 10px 0px;
+    margin: 20px 0px;
+    /* background-color: #EE184C; */
+    color: #EE184C;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.trailerContainer-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.trailerContainer-row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trailerContainer-row iframe
+{
+    width: 450px;
+    padding: 20px 0px;
+    -moz-border-radius: 15px;
+    border-radius: 10px;
+}
+
+@media(max-width : 1050px)
+{
+    .trailerContainer-row
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trailerContainer-row iframe
+    {
+        width: 370px;
+    }
+}

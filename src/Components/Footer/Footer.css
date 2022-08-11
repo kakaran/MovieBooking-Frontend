@@ -1,0 +1,190 @@
+.footerLogobar
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#EE184C ;
+    padding: 0px 80px;
+}
+
+.footerlogo
+{
+    width : 150px;
+    height: 80px;
+}
+
+.footerlogo img 
+{
+    width : 150px;
+    height: 80px;
+}
+
+.socialmedia
+{
+    width: 200px;
+    padding: 0px 20px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+}
+
+.socialmedia span:hover{
+    color:black;
+}
+
+.footerConatainer
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #201E1E;
+    padding: 30px 90px;
+    justify-content: space-between;
+}
+
+.footerMenu
+{
+    display: flex;
+    flex-direction:column;
+    width: 400px; 
+    text-align:left;
+}
+
+.footerMenu h1{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footerMenu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 0px ;
+    font-size: 13px;
+}
+
+.footerMenu a:hover{
+    color: #EE184C;
+}
+
+.footerAboutUS,.footerRecent,.Newsletter
+{
+    width : 400px
+}
+
+.footerheading{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footerdetail{
+    color: white;
+    text-decoration: none;
+    padding: 10px 0px ;
+    padding-right: 40px;
+    font-size: 15px;
+}
+
+.email
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    gap: 5px;
+}
+
+.email input 
+{
+    padding: 10px;
+    border : 1px solid gray;
+    color: white;
+    background-color: #201E1E;
+    border-bottom: 1px solid white;
+}
+
+.email button{
+    padding: 4px;
+    color: #EE184C;
+    background-color: #201E1E;
+    border: 1px solid #EE184C;
+}
+
+.email button:hover{
+    cursor: pointer;
+    color: #201E1E;
+    background-color: #EE184C;
+    border: 1px solid #201E1E;
+}
+
+.copydescription
+{
+    background-color: #201E1E;
+    text-align: center;
+    padding: 0px 80px;
+}
+
+.copydescription p{
+    font-size: 11px;
+    padding: 10px;
+    color: white;
+}
+
+@media (max-width: 840px) {
+    
+    .footerConatainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerAboutUS,.footerRecent,.Newsletter
+    {
+        width : auto;
+        text-align: justify;
+        padding: 20px 0px;
+    }
+    
+}
+
+@media(max-width : 600px)
+{
+    .footerMenu{
+        width: auto;
+    }
+    .footerLogobar
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .footerlogo
+    {
+        padding: 10px 0px ;
+    }
+    .socialmedia
+    {
+        padding: 10px 0px;
+    }
+    .email
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerConatainer
+    {
+        align-items: center;
+    }
+
+    .footerdetail
+    {
+        padding-right: 0px;
+        
+    }
+
+    .footerAboutUS,.footerRecent,.Newsletter
+    {
+        text-align: center;
+    }
+}

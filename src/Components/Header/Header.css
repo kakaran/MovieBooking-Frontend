@@ -1,0 +1,13 @@
+.HederNavbar
+{
+    z-index: 1000;
+    position: relative;
+    /* border-bottom: 1px solid white; */
+}
+
+.carousel
+{
+    position: relative;
+    top: -81px;
+    margin-bottom:-90px ;
+}

@@ -1,0 +1,171 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.ContactContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.map
+{
+    width: 740px;
+}
+.infomation
+{
+    width:740px;   
+    height: 600px;
+    text-align: left;
+    padding: 0px 20px ;
+}
+
+.infomation h1{
+    padding-top: 50px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.infomation p{
+    padding-top: 13px;
+    width: 500px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.inforow
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 500px; */
+    padding-top:13px 
+}
+
+.infocolumn
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.infocolumn label
+{
+    font-family: 'Comfortaa', cursive;
+}
+
+.infocolumn input,select
+{
+    width: 220px;
+    height: 35px;
+    margin-top: 10px;
+    font-family: 'Comfortaa', cursive;
+    padding: 0px 7px;
+}
+
+.infocolumn textarea
+{
+    width: 500px;   
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.infobutton
+{
+    display: flex;
+    justify-content: right;
+    /* width : 500px; */
+    padding-top: 20px;
+    
+}
+
+.infobutton button
+{
+    border: none;
+    padding: 10px;
+    border-radius: 10px 30px;
+    color: white;
+    background-color:palevioletred;
+    cursor: pointer;
+}
+
+.infobutton button:hover
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.informationContainer
+{
+    width: 500px;
+}
+
+.heading
+{
+    background-image: url(https://www.filmtrophies.com/wp-content/uploads/2017/08/Oscar-Best-Pictures.jpg);
+    height: 285px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+}
+
+.heading h1{
+    opacity: 1;
+    text-align: center;
+    padding: 100px;
+    color: whitesmoke;
+    font-family: 'Comfortaa', cursive;
+}
+
+@media(max-width: 1050px)
+{
+
+    .ContactContainer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .map{
+        width: auto;
+    }
+    .map iframe
+    {
+        width: 500px;
+    }
+
+    .infomation
+    {
+        width: auto;
+        padding: 0px;
+    }
+
+    .informationContainer p{
+        width: auto;
+    }
+}
+
+@media(max-width : 527px)
+{
+    .map iframe
+    {
+        width: 409px;
+    }
+
+    .informationContainer
+    {
+        width: 395px;
+    }
+
+    .infocolumn input,select
+    {
+        width: 158px;
+    }
+
+    .infocolumn textarea
+    {
+        width:368px
+    }
+}

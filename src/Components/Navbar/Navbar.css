@@ -1,0 +1,151 @@
+.navbarcontainer
+{
+    /* border: 1px solid black; */
+    /* background-color: ; */
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 100px;
+    height: 80px;
+    align-items: center;
+    box-shadow: 2px 7px -3px black;
+    /* position: relative; */
+}
+
+.navbarlinks a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0px 20px;
+}
+
+.navbarlinks
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px ;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    width: 600px;
+    display: block;
+}
+.navbarlinks a:hover{
+
+    color: #9198e5; 
+}
+.navLoginButton
+{
+    border-radius: 10px;
+    background-color: #C6DEFF;
+    padding: 10px 16px ;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    border: none;
+}
+
+.navLoginButton:hover{
+
+    background: linear-gradient(#e66465, #9198e5);
+    color: white;
+    
+}
+
+.navbarlinks ul 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbarlinks li{
+    list-style: none;
+}
+.logo
+{
+    width :170px;
+    height: 80px;
+    /* background-color: #E0D79E; */
+}
+
+.menubutton
+{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    display: none;
+}
+
+.menubutton button
+{
+    border: none;
+    background-color: transparent;
+    font-size: 29px;
+    color: white;
+    font-size: 900;
+    /* right: 100px;
+    top: 30px; */
+
+}
+
+ /* .navbarlogo
+{
+    border: 1px solid black;
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 10px 30px;
+}  */
+
+@media (max-width: 1056px) {
+
+
+    .navbarcontainer
+    {
+        padding: 0px 30px;
+    }
+
+    
+    .navbarlinks ul
+    {
+        flex-direction: column;
+        justify-content: right;
+        position: absolute;
+        right: 0px;
+        top:50px;
+        background:linear-gradient(60deg,#001d4a,#1c1c1c,#840032,#273e47,#013a63);
+        animation-name: example;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;        
+        border-radius:10px;
+    }
+
+    @keyframes example {
+        from{
+            right: 0px;
+            top:50px;
+        }to
+        {
+            right: 31px;
+            top:50px;
+        }
+    }
+    .navbarlinks li
+    {
+        padding: 30px 30px ;
+        border: 1px solid white;
+        border-radius:10px;
+        width:160px;
+        text-align: center;
+    }
+    .navbarlinks
+    {
+        z-index: 1000;
+    }
+    .menubutton
+    {
+        display: block ;
+        justify-content: right;
+    }
+}

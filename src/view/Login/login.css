@@ -1,0 +1,38 @@
+.Loginpage
+{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+    padding-right: 120px;
+}
+
+.loginformContainer,.loginimg
+{
+    height: 600px;
+    /* border : 1px solid black; */
+    width: auto;
+}
+
+.loginformContainer
+{
+    width: auto;
+}
+
+.loginimg img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width : 1050px)
+{
+    .Loginpage{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .loginformContainer.loginimg
+    {
+        width: 100%;
+    }
+}

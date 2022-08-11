@@ -1,0 +1,46 @@
+.App {
+    text-align: center;
+}
+  
+.App-logo {
+  height: 40vmin;
+}
+  
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+  
+.App-link {
+  color: #09d3ac;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+.slides {
+  position: relative;
+}
+
+
+.slides .slick-prev {
+  left: 5%;
+}
+
+.slides .slick-next {
+  right: 5%;
+}
+
+.imgHeight
+{
+  height: 600px;
+}

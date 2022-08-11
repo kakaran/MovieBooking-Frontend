@@ -1,0 +1,257 @@
+
+.backgroundimg img
+{
+    width: 100%;
+    height: 500px;
+    opacity: 0.9;
+    filter: brightness(10%);
+    /* z-index: 10; */
+    position: absolute;
+}
+
+.frontdata
+{
+    padding: 45px 70px ;
+}
+
+.datarow
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 400px;
+}
+
+.datarow img
+{
+    border-radius: 15px;
+    z-index: 900;
+    height: 417px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.detail
+{
+    padding: 10px 40px;
+    z-index: 1000;
+
+}
+
+.detail h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    /* z-index: 1000; */
+    color: white;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.detail p
+{
+    color: white;
+    font-size:15px;
+    padding: 10px 0px;
+    font-family: 'Comfortaa', cursive;
+    align-items: center;
+}
+
+.detailpara
+{
+    font-size: 24px;
+}
+
+
+.displaylanguage
+{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    width: 650px;
+}
+
+.timetype p
+{
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.moviebookbutton
+{
+    padding: 20px 0px;
+}
+
+.moviebookbutton button
+{
+    padding:14px 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    background-color: #EE184C ;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+
+.moviebookbutton button:hover{
+    border: 1px solid #EE184C;
+    background-color: transparent;
+}
+
+
+.AboutofMovie
+{
+    text-align: left;
+    padding: 25px 0px;
+    padding-left: 130px;
+    width:800px
+}
+
+.AboutofMovie h1{
+    font-size: 24px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.AboutofMovie p
+{
+    padding: 20px 0px ;
+    text-align: justify;
+}
+
+.AboutofMovie hr{
+    
+    border: none;
+    border-bottom: 1px solid #9a8c98;
+}
+
+.casters
+{
+    padding-bottom: 40px;
+    padding-left: 130px;
+    width:900px
+}
+.casterimagename
+{
+    display: flex;
+    flex-direction: column;
+}
+.casters hr{
+    border: none;
+    border-bottom: 1px solid #9a8c98;
+}
+
+.casters h1{
+    font-size: 24px;
+    padding: 20px 0px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.casterimg
+{
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+.castslider
+{
+    overflow :scroll;
+    position: relative;
+}
+
+.casterimgcircle img
+{
+    width: 120px;
+    display: flex;
+    border-radius: 90px;
+    margin: 12px 10px;
+    justify-content: space-between;
+}
+
+.castername
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.casternamedetail
+{
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.casternamedetail p{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 16px 20.5px;
+}
+
+@media (max-width : 1050px) {
+    
+    .datarow
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seprateMovieContanier
+    {
+        margin-bottom: 310px;
+    }
+    
+    .datarow img
+    {
+        width : 280px
+    }
+
+    .detail
+    {
+        width : 275px;
+        padding: 20px 10px ;
+    }
+
+    .backgroundimg img
+    {
+        height: 800px;
+    }
+
+    .AboutofMovie,.casters
+    {
+        width:600px;
+        padding-left: 38px;
+
+    }
+
+    .displaylanguage
+    {
+        width: 400px;
+    }
+}
+
+@media (max-width : 640px) {
+    
+    
+    .AboutofMovie,.casters
+    {
+        width:auto;        
+        padding-left: 38px;
+    }
+
+    .casterimg,.castername
+    {
+        float: left;
+    }
+
+    .displaylanguage
+    {
+        width: 320px;
+    }
+
+
+    .AboutofMovie p
+    {
+        padding-right:15px;
+    }
+
+}

@@ -1,0 +1,121 @@
+.aboutHeading
+{
+    background-image: url("https://cdn.vox-cdn.com/thumbor/WhBtiSXd3B_c9zlrjW08KU-7_OU=/0x0:2300x1499/1200x800/filters:focal(966x566:1334x934)/cdn.vox-cdn.com/uploads/chorus_image/image/57988089/Movies_end_of_year_2017.0.jpg");
+    height: 290px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutHeading h1{
+    text-align: center;
+    color: white;
+    padding: 100px 0px;
+}
+
+.textabout
+{
+    text-align: center;
+    margin-top: 20px ;
+    padding: 20px 150px;
+}
+
+.textabout h1{
+    padding: 10px 0px;
+    font-size: 35px;
+}
+
+.textabout hr{
+    width: 100px;
+    margin: auto;
+}
+
+.textabout p{
+    padding: 10px 0px;
+}
+
+.detailabout
+{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 40px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.choose
+{
+    width: 130px;
+    margin: auto;   
+    text-align: center;
+    padding: 20px 0px ;
+    font-size: 60px;
+    color: #EE184C;
+}
+
+.chooseContainer {
+    width :400px;
+    padding: 20px 0px;
+}
+
+.chooseContainer p{
+    padding: 10px 10px;
+}
+
+.movieabout
+{
+    text-align: center;
+    /* display: flex; */
+}
+
+.movieabout h1{
+    font-size: 40px;
+    padding: 30px 0px;
+}
+
+.fantasy
+{
+    width :500px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.holdingcontanier
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0px ;
+}
+
+.fantasydetail h3{
+    text-align: left;
+    color: #EE184C;
+}
+
+.fantasyimg
+{
+    font-size: 21px;
+    padding: 0px 15px;
+    color: #EE184C;
+}
+.fantasydetail p{
+    width: 300px;
+    text-align: left;
+}
+
+@media(max-width : 1054px)
+{
+    .textabout
+    {
+        padding: 30px 30px;
+    }
+
+    .detailabout
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
