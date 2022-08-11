@@ -5,6 +5,3 @@
   force = false
 
 
-[build]
-
-functions = "functions"
