@@ -158,6 +158,11 @@
     position: relative;
 }
 
+.castslider::-webkit-scrollbar
+{
+    display: none;
+}
+
 .casterimgcircle img
 {
     width: 120px;

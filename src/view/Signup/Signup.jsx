@@ -4,6 +4,7 @@ import { BsArrowRight,BsEyeFill,BsEyeSlashFill } from 'react-icons/bs';
 
 
 import "./signup.css"
+import { toast } from 'react-toastify';
 export default function Signup() {
     const [passwordtype,setPasswordType] = useState("password");
     const [conpasswordtype,setconPasswordType] = useState("password");
@@ -25,6 +26,10 @@ export default function Signup() {
 
         await axios.post("https://moviebooking-k.herokuapp.com/api/Signup",user).then(function(response){
             window.location.href = "/login";
+        }).catch(function(error)
+        {
+            console.log(error);
+            toast.error(error.request.response);
         })
         
     }

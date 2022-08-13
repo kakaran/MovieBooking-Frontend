@@ -13,6 +13,22 @@
     /* position: relative; */
 }
 
+.navbarlinks_ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    width: 600px;
+}
+
+.navbarlinks
+{
+    align-items: center;
+}
+
 .navbarlinks a
 {
     text-decoration: none;
@@ -20,23 +36,15 @@
     text-transform: uppercase;
     font-weight: 800;
     padding: 0px 20px;
-}
 
-.navbarlinks
+}
+.logo
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0px 20px ;
-    align-items: center;
-    font-family: 'Comfortaa', cursive;
-    width: 600px;
-    display: block;
+    width :170px;
+    height: 80px;
+    /* background-color: #E0D79E; */
 }
-.navbarlinks a:hover{
 
-    color: #9198e5; 
-}
 .navLoginButton
 {
     border-radius: 10px;
@@ -52,23 +60,6 @@
     background: linear-gradient(#e66465, #9198e5);
     color: white;
     
-}
-
-.navbarlinks ul 
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.navbarlinks li{
-    list-style: none;
-}
-.logo
-{
-    width :170px;
-    height: 80px;
-    /* background-color: #E0D79E; */
 }
 
 .menubutton
@@ -90,7 +81,6 @@
     top: 30px; */
 
 }
-
  /* .navbarlogo
 {
     border: 1px solid black;
@@ -106,8 +96,12 @@
         padding: 0px 30px;
     }
 
+    .navbarlinks
+    {
+        flex-direction: column;
+    }
     
-    .navbarlinks ul
+    .shownavbar 
     {
         flex-direction: column;
         justify-content: right;
@@ -119,7 +113,15 @@
         animation-duration: 1s;
         animation-fill-mode: forwards;        
         border-radius:10px;
+        list-style: none;
+        display: block;
     }
+
+    .navbarlinks_ul
+    {
+        display: none;
+    }
+    
 
     @keyframes example {
         from{
