@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React,{useState} from 'react';
 import {BsEyeFill,BsEyeSlashFill } from 'react-icons/bs';
+import { NavLink } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./Loginform.css";
@@ -23,7 +24,8 @@ export default function Loginform() {
           localStorage.setItem("token",response.data.token);
           localStorage.setItem("userid",response.data.userid);
           toast.success("Successfully Login");
-          window.location.href="/Movies";
+          // window.location.href="/Movies";
+          window.location.assign="/Movies";
       }
     }
     ).catch(function(error)
@@ -68,7 +70,7 @@ export default function Loginform() {
           {
             handleSignin();
           }}>Login</button>
-          <a className='createA' href="/signup"><p>Create Account</p></a>
+          <NavLink className='createA' to="/signup"><p>Create Account</p></NavLink>
         </div>
         <ToastContainer 
         position="top-center"

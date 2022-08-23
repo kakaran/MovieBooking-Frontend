@@ -3,6 +3,7 @@ import logo from "../../Images/navlogo2.png";
 import "./Footer.css";
 import { AiFillInstagram, AiOutlineTwitter,AiOutlineCopyright } from "react-icons/ai";
 import { FaPinterestP, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
 
@@ -46,10 +47,10 @@ export default function Footer() {
       <div className="footerConatainer">
         <div className="footerMenu">
           <h1>MENU</h1>
-          <a href="/">Home</a>
-          <a href="/Contact">Contact</a>
-          <a href="/About">About</a>
-          <a href="/Login">Login</a>
+          <NavLink to ="/">Home</NavLink>
+          <NavLink to ="/Contact">Contact</NavLink>
+          <NavLink to ="/About">About</NavLink>
+          <NavLink to ="/Login">Login</NavLink>
         </div>
         <div className="footerAboutUS">
           <h1 className="footerheading">ABOUT US</h1>
