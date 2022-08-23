@@ -24,8 +24,8 @@ export default function Loginform() {
           localStorage.setItem("token",response.data.token);
           localStorage.setItem("userid",response.data.userid);
           toast.success("Successfully Login");
-          // window.location.href="/Movies";
-          window.location.assign="/Movies";
+          window.location.href="/Movies";
+          
       }
     }
     ).catch(function(error)
