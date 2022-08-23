@@ -3,12 +3,13 @@ import "./Navbar.css";
 import logo from "../../Images/navlogo2.png"
 import Swal from 'sweetalert2';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
 
 
 export default function Navbar() {
 
   const [inout , setInout] = useState();
-  const [MoviePath, setMoviePath] = useState();
+  const [MoviePath, setMoviePath] = useState("/");
   const [inoutDirection , setDirection] = useState("/login");
   const [displayvalue , setDisplayValue] = useState(false);
   
@@ -25,7 +26,7 @@ export default function Navbar() {
     else
     {
       setInout("Login");
-      setMoviePath()
+      setMoviePath('/')
       setDirection("/login");    
     }
 
@@ -67,17 +68,17 @@ export default function Navbar() {
     <>
         <div className="navbarcontainer">
           <div className='navbarlogo'><img className="logo" src={logo} alt="" /></div>
-          <div className="navbarlinks" >
-            <ul className={displayvalue ? "shownavbar" : "navbarlinks_ul"}>
-            <li><a href="/">Home</a></li>
-            <li><a href={MoviePath} onClick={()=>{
+          <div className="navbarNavLinks" >
+            <ul className={displayvalue ? "shownavbar" : "navbarNavLinks_ul"}>
+            <li><NavLink className="navbranchoretag" to="/">Home</NavLink></li>
+            <li><NavLink className="navbranchoretag" to={MoviePath} onClick={()=>{
               checkMoviePath();
-            }}>Movies</a></li>
-            <li><a href="/Contact">Contact us</a></li>
-            <li><a href="/About">About</a></li>
-            <li><a href={inoutDirection}><button className='navLoginButton' onClick={()=>{
+            }}>Movies</NavLink></li>
+            <li><NavLink className="navbranchoretag" to="/Contact">Contact us</NavLink></li>
+            <li><NavLink className="navbranchoretag" to="/About">About</NavLink></li>
+            <li><NavLink className="navbranchoretag" to={inoutDirection}><button className='navLoginButton' onClick={()=>{
               handleChange();
-            }}>{inout}</button></a></li>
+            }}>{inout}</button></NavLink></li>
             </ul>
           </div>        
             <div className="menubutton"><button onClick={()=> setDisplayValue(!displayvalue)}><AiOutlineMenu/></button></div>

@@ -22,7 +22,7 @@ function App() {
         <Route exact path="/About" element = {<About/>}/>
         <Route exact path="/MovieInfo/:id" element = {<Movieseparate/>}/>
       </Routes>
-    </Router>
+      </Router>
     </>
   );
 }

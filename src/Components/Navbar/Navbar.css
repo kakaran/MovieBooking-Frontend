@@ -13,7 +13,7 @@
     /* position: relative; */
 }
 
-.navbarlinks_ul
+.navbarNavLinks_ul
 {
     display: flex;
     flex-direction: row;
@@ -29,15 +29,15 @@
     align-items: center;
 }
 
-.navbarlinks a
+.navbranchoretag
 {
     text-decoration: none;
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: 800;
     padding: 0px 20px;
-
 }
+
 .logo
 {
     width :170px;
@@ -117,7 +117,7 @@
         display: block;
     }
 
-    .navbarlinks_ul
+    .navbarNavLinks_ul
     {
         display: none;
     }
@@ -133,7 +133,7 @@
             top:50px;
         }
     }
-    .navbarlinks li
+    .navbarNavLinks li
     {
         padding: 30px 30px ;
         border: 1px solid white;
@@ -141,7 +141,7 @@
         width:160px;
         text-align: center;
     }
-    .navbarlinks
+    .navbarNavLinks
     {
         z-index: 1000;
     }
