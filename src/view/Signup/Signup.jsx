@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import axios from 'axios';
 import { BsArrowRight,BsEyeFill,BsEyeSlashFill } from 'react-icons/bs';
+import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import "./signup.css"
 
@@ -14,7 +15,7 @@ export default function Signup() {
     const [useremail, setEmail] = useState();
     const [password, setPass] = useState();
     const [confirmpassword, setConPass] = useState();
-    
+    const navigate = useNavigate;
     const  handleSignup = async () =>
     {
         const user = {
@@ -25,7 +26,8 @@ export default function Signup() {
         };
 
         await axios.post("https://moviebooking-k.herokuapp.com/api/Signup",user).then(function(response){
-            window.location.href = "/login";
+            // window.location.href = "/login";
+                navigate("/login");
             Swal.fire({
                 icon : "success",
                 text: `Your account has been created `,
@@ -105,7 +107,7 @@ export default function Signup() {
                     {
                         handleSignup();
                     }}>Sign Up</button>
-                    <a href="/login"><p>Login <span className='signuparrow'><BsArrowRight/></span></p></a>
+                    <Link to="/login"><p>Login <span className='signuparrow'><BsArrowRight/></span></p></Link>
                 </div>
             </div>
         </div>

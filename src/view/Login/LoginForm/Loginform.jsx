@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React,{useState} from 'react';
 import {BsEyeFill,BsEyeSlashFill } from 'react-icons/bs';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./Loginform.css";
@@ -12,6 +13,8 @@ export default function Loginform() {
   const [passwordtype,setPasswordType] = useState("password");
   const [leye, setEye] = useState(<BsEyeSlashFill/>)
   const [password,setPass] = useState();
+  const navigate = useNavigate();
+
   async function handleSignin() 
   { 
     const user = {
@@ -24,8 +27,9 @@ export default function Loginform() {
           localStorage.setItem("token",response.data.token);
           localStorage.setItem("userid",response.data.userid);
           toast.success("Successfully Login");
-          window.location.href="/Movies";
-          
+          // window.location.href="/Movies";
+          navigate("/Movies");
+
       }
     }
     ).catch(function(error)
@@ -65,7 +69,7 @@ export default function Loginform() {
             loginPassshow();
             }}>{leye}</button>
             </div>
-          <a className = "forgetP" href="/"><p>Forgot Password?</p></a>
+          <Link className = "forgetP" to="/"><p>Forgot Password?</p></Link>
           <button className = " loginButton" onClick={() =>
           {
             handleSignin();
