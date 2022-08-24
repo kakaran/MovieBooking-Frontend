@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./movie.css";
 // import Movies from "../HomePage/HomeMovies/Movies";
 
 export default function Movie() {
   const [movies, setMovies] = useState([]);
+  const navigate =  useNavigate();
 
   useEffect(() => {
     axios.defaults.headers = {
@@ -38,7 +40,8 @@ export default function Movie() {
                     <div className="movieImg">
                     <a onClick={() =>
                     {
-                      window.location.href = "/MovieInfo/" + data._id;
+                      // window.location.href = "/MovieInfo/" + data._id;
+                      navigate("/MovieInfo/" + data._id)
                     }}>
                         <img src={data.movieImage} alt="" />
                     </a>
