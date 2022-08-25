@@ -9,6 +9,7 @@ import Movie from "./view/movies/Movie";
 import Contact from "./view/Contactus/Contact";
 import Movieseparate from "./view/movies/Separatepage/Movieseparate";
 import About from "./view/About/About";
+
 function App() {
   return (
     <>
@@ -26,4 +27,5 @@ function App() {
     </>
   );
 }
+
 export default App;
