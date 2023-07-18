@@ -21,7 +21,7 @@ export default function Loginform() {
       useremail,
       password,
     };
-    await axios.post("https://moviebooking-k.herokuapp.com/api/Login",user).then(function(response){
+    await axios.post("https://tan-prickly-centipede.cyclic.app/api/Login",user).then(function(response){
       if(response.data.token)
       {
           localStorage.setItem("token",response.data.token);

@@ -17,7 +17,7 @@ export default function Movie() {
 
     async function fetchData() {
       try {
-        const data = (await axios.get("https://moviebooking-k.herokuapp.com/movie/getMovies", {})).data;
+        const data = (await axios.get("https://tan-prickly-centipede.cyclic.app/movie/getMovies", {})).data;
         setMovies(data);
       } catch (error) {
         console.log(error);

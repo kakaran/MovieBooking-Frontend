@@ -16,7 +16,6 @@ export default function Navbar() {
   
   useEffect(()=>
   {
-   
     if(localStorage.getItem("token"))
     {
       setInout("Logout");
@@ -27,9 +26,8 @@ export default function Navbar() {
     {
       setInout("Login");
       setMoviePath('/')
-      setDirection("/login");    
+      setDirection("/login");   
     }
-
   },[])
 
   function handleChange()

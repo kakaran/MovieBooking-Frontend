@@ -23,7 +23,7 @@ export default function Movieseparate() {
     async function fetchData() {
       try {
         const data = (
-          await axios.get(`https://moviebooking-k.herokuapp.com/movie/getMovies/${id}`, {})
+          await axios.get(`https://tan-prickly-centipede.cyclic.app/movie/getMovies/${id}`, {})
         ).data;
         setMovieD(data);
         setCastimg(data.casterimg);
@@ -42,7 +42,7 @@ export default function Movieseparate() {
   {
     const userId = {id : localStorage.getItem("userid")}
     console.log(userId)
-      await axios.post(`https://moviebooking-k.herokuapp.com/movie/moviebooking/${id}`,userId).then(function (response)
+      await axios.post(`https://tan-prickly-centipede.cyclic.app/movie/moviebooking/${id}`,userId).then(function (response)
       {
         if(response.data)
         {

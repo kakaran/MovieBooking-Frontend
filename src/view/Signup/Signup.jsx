@@ -25,7 +25,7 @@ export default function Signup() {
             confirmpassword,
         };
 
-        await axios.post("https://moviebooking-k.herokuapp.com/api/Signup",user).then(function(response){
+        await axios.post("https://tan-prickly-centipede.cyclic.app/api/Signup",user).then(function(response){
             // window.location.href = "/login";
             Swal.fire({
                 icon : "success",
